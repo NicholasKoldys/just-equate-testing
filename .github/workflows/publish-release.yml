@@ -9,6 +9,7 @@ on:
 
 jobs:
   release:
+    name: Create Release
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -19,7 +20,7 @@ jobs:
           mkdir -p release
           zip -r release/JustEquateTesting.zip ./lib
 
-      - name: Create Release
+      - name: Release zip
         id: create_release
         uses: ncipollo/release-action@v1
         with:
@@ -53,6 +54,6 @@ jobs:
       - run : pnpm i --prod
 
       - name: Publish
-        run: pnpm publish --dry-run --no-git-checks
+        run: pnpm publish --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

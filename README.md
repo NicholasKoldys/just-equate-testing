@@ -1,2 +1,3 @@
 # just-equate-testing
-just-equate-testing
+
+@nicholaskoldys/just-equate-testing
