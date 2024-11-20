@@ -53,6 +53,6 @@ jobs:
       - run : pnpm i --prod
 
       - name: Publish
-        run: pnpm publish --dry-run --no-git-checks ./lib
+        run: pnpm publish --dry-run --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
