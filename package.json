@@ -1,0 +1,33 @@
+{
+  "name": "@nicholaskoldys/just-equate=testing",
+  "author": "NicholasKoldys.dev",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NicholasKoldys/just-equate-testing.git"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0",
+    "typescript": "^5.6.3"
+  },
+  "scripts": {
+    "lock": "pnpm i --lockfile-only",
+    "build:src_lib": "pnpm exec tsc --declaration --outDir ./src/lib --declarationMap --emitDeclarationOnly",
+    "build:ts": "pnpm exec tsc -p ./tsconfig.json",
+    "build:minify": "pnpm exec esbuild --minify \"./src/JustEquateTesting.ts\" --bundle --outfile=\"./lib/JustEquateTesting.min.js\"",
+    "build": "pnpm run build:ts && pnpm run build:minify"
+  },
+  "publishConfig": {
+    "@nicholaskoldys:registry": "https://npm.pkg.github.com"
+  },
+  "packageManager": "pnpm@9.8.0+sha512.8e4c3550fb500e808dbc30bb0ce4dd1eb614e30b1c55245f211591ec2cdf9c611cabd34e1364b42f564bd54b3945ed0f49d61d1bbf2ec9bd74b866fcdc723276",
+  "types": "types.d.ts",
+  "bugs": "https://github.com/NicholasKoldys/just-equate=testing/issues",
+  "homepage": "https://github.com/NicholasKoldys/just-equate=testing",
+  "keywords": [
+    "testing",
+    "library"
+  ]
+}
