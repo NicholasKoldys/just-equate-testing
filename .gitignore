@@ -1,0 +1,10 @@
+*.*
+node_modules
+
+!/lib/**/*.*
+!/src/**/*.*
+!.gitignore
+!package.json
+!pnpm-lock.yaml
+!README.md
+!tsconfig.json
