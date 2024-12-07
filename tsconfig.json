@@ -12,12 +12,12 @@
     },
     "outDir": "./build",
     "declaration": true,
-    "declarationDir": "lib",
+    "declarationDir": "dist",
     "strict": true,
   },
   "exclude": [
     "node_modules",
     "./build/**/*.*",
-    "./lib/**/*.*",
+    "./dist/**/*.*",
   ]
 }

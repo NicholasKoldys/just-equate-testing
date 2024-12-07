@@ -18,7 +18,7 @@ jobs:
       - name: Zip files
         run: |
           mkdir -p release
-          zip -r release/JustEquateTesting.zip ./lib
+          zip -r release/JustEquateTesting.zip ./dist
 
       - name: Release zip
         id: create_release

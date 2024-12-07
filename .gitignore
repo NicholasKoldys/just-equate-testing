@@ -1,8 +1,9 @@
 *.*
 node_modules
 
-!/lib/**/*.*
+!/dist/**/*.*
 !/src/**/*.*
+
 !.gitignore
 !package.json
 !pnpm-lock.yaml

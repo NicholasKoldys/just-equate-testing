@@ -13,3 +13,4 @@ export declare function FastTestOf(suite: TestSuite): void;
 export declare function assert(expression: boolean, isFailureCheck?: boolean): void;
 export declare function assertEquals(actual: any, expected: any, isFailureCheck?: boolean): void;
 export declare function assertStrictEquals(actual: any, expected: any, isFailureCheck?: boolean): void;
+export {};
